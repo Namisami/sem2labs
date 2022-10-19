@@ -1,0 +1,7 @@
+<svg height="100" width="140" xmlns="http://www.w3.org/2000/svg">
+    <g stroke="black" fill="transparent" stroke-width="3">
+        <circle cx="35" cy="35" r="33"/>
+        <path d="M 35 68 C 50 100, 100 20, 125 30" />
+        <circle cx="125" cy="30" r="10" fill="red" />
+    </g>
+</svg>

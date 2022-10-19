@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RK2</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="body">
+<header class="header">
+  <a href="#" class="header__logo" aria-label="Логотип, по клику пересылает на главную">
+    <img class="header__logo-img" src="images/logo.png"
+    srcset="images/logo-med.png 2x,
+            images/logo-big.png 4x" alt="Logo">
+  </a>
+  <nav class="header__nav nav">
+    <ul class="nav__list">
+      <li class="nav__item">
+        <a href="#card1" class="nav__anchor">
+          Мониторы
+        </a>
+      </li>
+      <li class="nav__item">
+        <a href="#card2" class="nav__anchor">
+          Видеокарты
+        </a>
+      </li>
+      <li class="nav__item">
+        <a href="#card3" class="nav__anchor">
+          Материнские платы
+        </a>
+      </li>
+      <li class="nav__item">
+        <a href="#buy-list" class="nav__anchor">
+          Список покупок
+        </a>
+      </li>
+    </ul>
+  </nav>
+</header>
+<main class="main">
+  <h1 class="main__title">
+    Сборка компьютера
+  </h1>
+  <h2 class="main__subtitle">
+    Компоненты
+  </h2>
+  <ul class="main__cards">
+    <li id="card1" class="main__card card">
+      <h3 class="card__title">Мониторы</h3>
+      <img class="card__img" src="images/display.png" alt="Монитор">
+      <p class="card__description">Монитор — устройство оперативной визуальной связи пользователя с управляющим устройством и отображением данных, передаваемых с клавиатуры, мыши или центрального процессора.</p>
+      <ul class="card__list">
+        <li class="card__item">AOC 27B2H</li>
+        <li class="card__item">HP M27fw (2H1A4AA)</li>
+        <li class="card__item">X24c (9FM22AA)</li>
+      </ul>
+    </li>
+    <li id="card2" class="main__card card">
+      <h3 class="card__title">Видеокарты</h3>
+        <img class="card__img" src="images/nvidia.png" alt="Видеокарта">
+      <p class="card__description">Видеока́рта — устройство, преобразующее графический образ, хранящийся как содержимое памяти компьютера (или самого адаптера), в форму, пригодную для дальнейшего вывода на экран монитора.</p>
+      <ul class="card__list">
+        <li class="card__item">MSI GeForce RTX 3050 GAMING</li>
+        <li class="card__item">GIGABYTE PCIE16 RTX3060</li>
+        <li class="card__item">Palit GeForce GTX 1660 SUPER</li>
+      </ul>
+    </li>
+    <li id="card3" class="main__card card">
+      <h3 class="card__title">Материнская плата</h3>
+        <img class="card__img" src="images/mother.png" alt="Материнская плата">
+      <p class="card__description">Материнская плата — печатная плата, являющаяся основой построения модульного электронного устройства, например — компьютера.</p>
+      <ul class="card__list">
+        <li class="card__item">ASRock H310CM-DVS</li>
+        <li class="card__item">Esonic G41CRL3</li>
+        <li class="card__item">GIGABYTE GA-A320M-H</li>
+      </ul>
+    </li>
+  </ul>
+  <div class="main__buy buy" id="buy-list">
+    <h2 class="buy__title">Список покупок</h2>
+    <p class="buy__notice">Заполните все поля</p>
+    <div class="buy__options">
+      <label class="buy__lbl" for="name">Название</label>
+      <input class="buy__input" type="text" name="name" id="name">
+      <label class="buy__lbl" for="category">Категория</label>
+      <select name="category" id="category" class="buy__input">
+        <option class="buy__category" value="Выберите категорию">Выберите категорию</option>
+        <option class="buy__category" value="Мониторы">Мониторы</option>
+        <option class="buy__category" value="Видеокарты">Видеокарты</option>
+        <option class="buy__category" value="Материнские платы">Материнские платы</option>
+      </select>
+      <label class="buy__lbl" for="count">Количество</label>
+      <input class="buy__input" type="number" name="count" id="count" value="1">
+    </div>
+    <button class="buy__add">Добавить</button>
+    <div class="buy__goodies goodies">
+      <p class="goodies__name">Название</p>
+      <p class="goodies__count">Кол-во</p>
+      <p class="goodies__empty">Пусто</p>
+    </div>
+  </div>
+</main>
+<footer class="footer">
+  <div class="footer__aboutme">
+    <p class="footer__fio">Хасанов Марат Сергеевич</p>
+    <p class="footer__group">211-322</p>
+    <p class="footer__date">28.05.2022</p>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,158 @@
+@use "../abstract/mixins";
+@use "../abstract/variables";
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  height: 281px;
+  background-color: black;
+  color: variables.$footerTextColor;
+  @include mixins.logo;
+  &__nav {
+    display: none;
+  }
+  &__logo {
+    padding-top: 2em;
+  }
+  &__menu {
+    padding: 1em 7%;
+    padding-bottom: 2em;
+  }
+  &__item {
+    padding: 0.4em;
+    font-size: 16px;
+    font-family: "RF Dewi SB";
+  }
+  &__privacy {
+    text-decoration: none;
+    color: inherit;
+  }
+  &__agreements {
+    text-decoration: none;
+    color: inherit;
+  }
+  &__chat {
+    position: relative;
+    margin: 0 7%;
+    display: flex;
+    align-items: center;
+  }
+  &__copyright {
+    margin-left: 6px;
+    margin-right: 60px;
+    display: inline;
+    font-family: "RF Dewi SB";
+  }
+  &__tg-link {
+    position: absolute;
+    left: 170px;
+    top: -8px;
+  }
+  &__tg-img {
+    transform: scaleY(0.85);
+  }
+  &__inst-link {
+  }
+  &__inst-img {
+    height: 21px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .footer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    &__nav {
+      order: 1;
+      display: flex;
+      width: 36%;
+      margin: auto 7%;
+    }
+    &__item {
+
+    }
+    &__link {
+      font-family: "RF Dewi SB";
+      font-size: 18px;
+      text-decoration: none;
+      color: grey;
+    }
+    &__logo {
+      order: 2;
+      justify-content: end;
+      width: 36%;
+      margin: auto 7%;
+      padding: 0;
+    }
+    &__chat {
+      order: 3;
+      width: 33%;
+      margin: 0 7%;
+      margin-right: 0;
+    }
+    &__menu {
+      width: 53%;
+      order: 4;
+      padding: 0;
+      margin: 0 7%;
+      margin-left: 0;
+      display: flex;
+      margin: auto;
+      margin-right: 7%;
+      justify-content: end;
+    }
+    &__tg-link {
+      top: 46px;
+    }
+  }
+}
+
+@media (min-width: 2000px) {
+  .footer {
+    &__nav {
+      margin: auto 12%;
+      width: 26%;
+    }
+    &__logo {
+      margin: auto 12%;
+      width: 26%;
+    }
+    &__menu {
+      width: 48%;
+      margin-right: 12%;
+    }
+    &__chat {
+      width: 28%;
+      margin-left: 12%;
+    }
+  }
+}
+
+@media (min-width: 2400px) {
+  .footer {
+    &__nav {
+      margin: auto 17%;
+      margin-right: 12%;
+      width: 21%;
+    }
+    &__logo {
+      margin: auto 17%;
+      width: 16%;
+    }
+    &__menu {
+      width: 43%;
+      margin-right: 17%;
+    }
+    &__chat {
+      width: 23%;
+      margin-left: 17%;
+    }
+  }
+}
+
+@media print {
+  .footer {
+    display: none;
+  }
+}

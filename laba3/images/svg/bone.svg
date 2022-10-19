@@ -1,0 +1,17 @@
+<svg width="70" height="70" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <g id="bone" stroke="#646464" stroke-linejoin="round" stroke-width="3" fill="none">
+            <polygon points="0 0, 10 5, 0 10" />
+        </g>
+    </defs>
+    <use href="#bone" x="30" y="10" />
+    <use href="#bone" x="30" y="10" transform-origin="35 35" transform="rotate(36)" />
+    <use href="#bone" x="30" y="10" transform-origin="35 35" transform="rotate(72)" />
+    <use href="#bone" x="30" y="10" transform-origin="35 35" transform="rotate(108)" />
+    <use href="#bone" x="30" y="10" transform-origin="35 35" transform="rotate(144)" />
+    <use href="#bone" x="30" y="10" transform-origin="35 35" transform="rotate(180)" />
+    <use href="#bone" x="30" y="10" transform-origin="35 35" transform="rotate(216)" />
+    <use href="#bone" x="30" y="10" transform-origin="35 35" transform="rotate(252)" />
+    <use href="#bone" x="30" y="10" transform-origin="35 35" transform="rotate(288)" />
+    <use href="#bone" x="30" y="10" transform-origin="35 35" transform="rotate(324)" />
+</svg>

@@ -1,0 +1,6 @@
+<svg width="70" height="70" xmlns="http://www.w3.org/2000/svg">
+    <g stroke="#498816" stroke-width="2" stroke-linejoin="round" fill="transparent">
+        <polygon points="5 65, 5 35, 35 10, 65 35, 65 65" />
+        <circle r="8" cx="35" cy="45" />
+    </g>
+</svg>

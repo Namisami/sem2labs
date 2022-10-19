@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SVG</title>
+    <link rel="stylesheet" href="css/svg.css">
+</head>
+<body>
+    <div class="items">
+        <svg class="cross" width="70" height="70" xmlns="http://www.w3.org/2000/svg">
+            <g stroke-width="4">
+                <circle cx="35" cy="35" r="30" fill="transparent"/>
+                <g  fill="none" stroke-linecap="round">
+                    <path d="M 20 20 l 30 30"/>
+                    <path d="M 20 50 l 30 -30"/>
+                </g>
+            </g>
+        </svg>
+        <svg class="burger" width="70" height="70" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+                <g id="burger-line" stroke="black" stroke-width="4" stroke-linecap="round">
+                    <line x1="10" x2="60" y1="0" y2="0"/>
+                </g>
+            </defs>>
+            <use class="burger__line burger__line--1" href="#burger-line" x="0" y="27.5"/>
+            <use class="burger__line burger__line--2" href="#burger-line" x="0" y="40.5"/>
+            <use class="burger__line burger__line--3" href="#burger-line" x="0" y="52.5"/>
+        </svg>
+        <svg class="home" width="70" height="70" xmlns="http://www.w3.org/2000/svg">
+            <use href="#home" />
+        </svg>
+        <svg class="search" width="70" height="70" xmlns="http://www.w3.org/2000/svg">
+            <use href="#search" />
+        </svg>
+        <svg  width="0" height="0" xmlns="http://www.w3.org/2000/svg">
+            <symbol id="home">
+                <svg width="70" height="70" xmlns="http://www.w3.org/2000/svg">
+                    <g stroke-width="4">
+                        <circle r="21" cx="45" cy="25" fill="transparent" />
+                        <line x1="5" x2="30" y1="65" y2="40" stroke-linecap="round" />
+                    </g>
+                </svg>
+            </symbol>
+            <symbol id="search">
+                <svg width="70" height="70" xmlns="http://www.w3.org/2000/svg">
+                    <g stroke-width="4" stroke-linejoin="round" fill="transparent">
+                        <polygon points="5 65, 5 35, 35 10, 65 35, 65 65" />
+                        <circle r="8" cx="35" cy="45" />
+                    </g>
+                </svg>
+            </symbol>
+        </svg>
+        <svg width="70" height="70" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+                <g id="bone" stroke="#646464" stroke-linejoin="round" stroke-width="3" fill="none">
+                    <polygon points="0 0, 10 5, 0 10" />
+                </g>
+            </defs>
+            <use href="#bone" x="30" y="10" />
+            <use href="#bone" x="30" y="10" transform-origin="35 35" transform="rotate(36)" />
+            <use href="#bone" x="30" y="10" transform-origin="35 35" transform="rotate(72)" />
+            <use href="#bone" x="30" y="10" transform-origin="35 35" transform="rotate(108)" />
+            <use href="#bone" x="30" y="10" transform-origin="35 35" transform="rotate(144)" />
+            <use href="#bone" x="30" y="10" transform-origin="35 35" transform="rotate(180)" />
+            <use href="#bone" x="30" y="10" transform-origin="35 35" transform="rotate(216)" />
+            <use href="#bone" x="30" y="10" transform-origin="35 35" transform="rotate(252)" />
+            <use href="#bone" x="30" y="10" transform-origin="35 35" transform="rotate(288)" />
+            <use href="#bone" x="30" y="10" transform-origin="35 35" transform="rotate(324)" />
+        </svg>
+        <svg class="clock" height="70" width="70" xmlns="http://www.w3.org/2000/svg">
+            <g stroke="black" stroke-width="2" stroke-linecap="round">
+                <circle cx="35" cy="35" r="30" fill="none" />
+                <line class="clock__minute" x1="35" y1="35" x2="35" y2="10" transform-origin="35 35" />
+                <line class="clock__hour" x1="35" y1="35" x2="35" y2="20" transform-origin="35 35" />
+            </g>
+        </svg>
+        <svg class="light" height="100" width="140" xmlns="http://www.w3.org/2000/svg">
+            <g stroke="black" fill="transparent" stroke-width="3">
+                <circle class="light__lamp" cx="35" cy="35" r="33"/>
+                <path d="M 35 68 C 50 100, 100 20, 125 30" />
+                <circle class="light__button" cx="125" cy="30" r="10" fill="red" />
+            </g>
+        </svg>
+    </div>
+    <script src="script/svg.js"></script>
+</body>
+</html>

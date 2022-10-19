@@ -1,0 +1,27 @@
+@use "../abstract/variables" as vars;
+@use "../abstract/mixins";
+
+.footer {
+  &__aboutme {
+    padding: 10px 5px;
+    background-color: vars.$subBgColor;
+  }
+  & p {
+    @include mixins.mpzero;
+  }
+}
+
+@media (min-width: 470px) {
+  .footer {
+    &__aboutme {
+      padding: 10px 10%;
+    }
+  }
+}
+@media (min-width: 768px) {
+  .footer {
+    &__aboutme {
+      padding: 10px 20%;
+    }
+  }
+}

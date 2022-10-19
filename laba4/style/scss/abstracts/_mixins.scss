@@ -1,0 +1,9 @@
+@use 'variables';
+
+@mixin link {
+  text-decoration: none;
+  color: variables.$mainLinkColor;
+  &:active {
+    color: variables.$hoverTextColor;
+  }
+}

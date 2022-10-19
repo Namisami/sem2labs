@@ -1,0 +1,120 @@
+body {
+  margin: 0;
+}
+header {
+  height: 100px;
+}
+
+.burger {
+  position: absolute;
+  z-index: 1;
+  background-color: white;
+}
+.burger:hover {
+  cursor: pointer;
+}
+.burger__line--1 {
+  transition: transform 0.3s;
+  transform-origin: 17px 27.5px;
+}
+.burger__line--1.hover-on{
+  transform: translateX(7px) rotate(45deg);
+}
+.burger__line--2 {
+  transition: opacity 0.15s;
+}
+.burger__line--2.hover-on{
+  opacity: 0%;
+}
+.burger__line--3 {
+  transition: transform 0.3s;
+  transform-origin: 17px 52.5px;
+}
+.burger__line--3.hover-on {
+  transform: translateX(7px) rotate(-45deg);
+}
+
+.menu {
+  margin: 0 10px;
+  padding: 0;
+  list-style: none;
+  font-size: 20px;
+  position: absolute;
+  top: -200px;
+  transition: top 0.3s;
+  z-index: 0;
+}
+.menu.hover-on {
+  top: 70px;
+}
+.menu li {
+  margin: 5px 0;
+}
+.accordeon {
+  margin: 0;
+  margin-left: 20%;
+  padding: 0;
+  border-radius: 25px;
+  width: 50%;
+  list-style: none;
+}
+.accordeon__item {
+  width: 100%;
+}
+.accordeon__button {
+  border: 1px solid black;
+  cursor: pointer;
+  margin: 0;
+  padding: 2em 1em;
+  width: 100%;
+}
+.accordeon__button:hover {
+  background-color: blanchedalmond;
+}
+.accordeon__item:nth-of-type(1) .accordeon__button {
+  border-radius: 25px 25px 0 0;
+}
+.accordeon__item:nth-last-of-type(1) .accordeon__text {
+  border-bottom: 1px solid black;
+  border-radius: 0 0 25px 25px;
+}
+.accordeon__text {
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  padding: 0 2em;
+  margin: 0;
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 1s;
+}
+
+.accordeon__button.active {
+  background-color: blanchedalmond;
+}
+
+.notice {
+  height: 200px;
+  width: 200px;
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  border-radius: 20px;
+  box-shadow: 0 0 20px;
+  position: absolute;
+  background-color: white;
+  top: 100%;
+  left: 100%;
+  transition: top 1s, left 1s;
+}
+.notice__close {
+  position: absolute;
+  cursor: pointer;
+  top: 15px;
+  right: 15px;
+}
+
+body {
+  overflow: hidden;
+}

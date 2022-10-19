@@ -1,0 +1,167 @@
+@use "../abstract/variables" as vars;
+@use "../abstract/mixins";
+
+.main {
+  background-color: vars.$mainBgColor;
+  &__title {
+    @include mixins.mpzero;
+    padding: 10px 0;
+    text-align: center;
+  }
+  &__subtitle {
+    width: 100%;
+    text-align: center;
+    margin: 0 8px
+  }
+  &__cards {
+    @include mixins.mpzero;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+
+.card {
+  max-width: 100%;
+  border-radius: 15px;
+  margin: 5px;
+  padding: 15px;
+  background-color: vars.$cardColor;
+  &__list {
+    list-style: none;
+  }
+  &__title {
+    text-align: center;
+  }
+  &__img {
+    width: 100%;
+    max-width: 512px;
+  }
+}
+
+.buy {
+  display: flex;
+  flex-direction: column;
+  margin: 0 5px;
+  &__title {
+    text-align: center;
+  }
+  &__options {
+    margin: 0 20px;
+    row-gap: 5px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+  &__lbl {
+  }
+  &__input {
+    border: 1px solid grey;
+    border-radius: 2px;
+  }
+  &__add {
+    margin: 10px auto;
+    color: white;
+    background-color: vars.$buttonColor;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: opacity 0.3s;
+    &:hover {
+      opacity: 0.9;
+    }
+    &:active {
+      box-shadow: 0 0 10px black;
+    }
+  }
+  &__notice {
+    margin: 0 -5px;
+    margin-bottom: 5px;
+    opacity: 0;
+    text-align: center;
+    background-color: rgba(255, 0, 0, 0.255);
+  }
+}
+.goodies {
+  display: grid;
+  grid-template-columns: 30px 60% auto 30px 30px;
+  &__name, &__count {
+    @include mixins.mpzero;
+  }
+  &__name {
+    grid-column: 1 / 3;
+  }
+  &__count {
+    grid-column: 3 / 6;
+  }
+  &__empty {
+    grid-row: 2;
+    grid-column: 1 / 6;
+    text-align: center;
+  }
+  &__delete, &__accept {
+    cursor: pointer;
+  }
+  &__icon, &__delete, &__accept {
+    height: 100%;
+  }
+  &__element, &__howmuch {
+    margin: 0;
+    height: 100%;
+  }
+}
+
+.accept {
+  background-color: vars.$acceptColor;
+}
+
+@media (min-width: 470px) {
+  .buy {
+    &__options {
+      margin: 0 10%;
+    }
+  }
+  .main {
+    &__cards {
+      margin: 5px 10%;
+    }
+  }
+  .goodies {
+    margin: 0 10%;
+  }
+}
+@media (min-width: 768px) {
+  .buy {
+    &__options {
+      margin: 0 20%;
+    }
+  }
+  .main {
+    &__cards {
+      margin: 5px 20%;
+    }
+  }
+  .goodies {
+    margin: 0 20%;
+  }
+}
+@media (min-width: 1440px) {
+  .main {
+    &__cards {
+      flex-direction: row;
+      margin: 5px 0;
+    }
+  }
+  .card {
+    width: calc(33.333% - 90px);
+  }
+}
+@media (min-width: 2000px) {
+  .main {
+    &__cards {
+      flex-direction: row;
+      margin: 5px 10%;
+    }
+  }
+}

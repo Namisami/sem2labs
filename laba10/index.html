@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modal</title>
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="body">
+  <button class="open center">Открыть</button>
+  <form class="modal center form" name="modal">
+    <svg class="modal__close" width="10px" height="10px" xmlns="http://www.w3.org/2000/svg">
+      <g stroke-linecap="round" stroke="rgba(0, 0, 0, 0.5)" stroke-width="2">
+        <line x1="0" x2="10" y1="0" y2="10"></line>
+        <line x1="0" x2="10" y1="10" y2="0"></line>
+      </g>
+    </svg>
+    <label for="name">Имя</label>
+    <input class="modal__text form__name" type="text" name="name" placeholder="Имя" id="name" required minlength="3" maxlength="18">
+    <label for="email">Email</label>
+    <input class="modal__text form__email" type="email" name="email" placeholder="Email" id="email" required>
+    <p class="modal__paragraph">Ваша оценка</p>
+    <input type="radio" name="mark" id="bad">
+    <label class="modal__mark" for="bad">Плохо</label>
+    <br>
+    <input type="radio" name="mark" id="normal">
+    <label class="modal__mark" for="normal">Нормально</label>
+    <br>
+    <input type="radio" name="mark" id="good">
+    <label class="modal__mark" for="good">Хорошо</label>
+    <br>
+    <input type="radio" name="mark" id="perfect">
+    <label class="modal__mark" for="perfect">Отлично</label>
+    <input class="modal__submit" type="submit" value="Отправить">
+  </form>
+  <script src="js/script.js"></script>
+</body>
+</html>

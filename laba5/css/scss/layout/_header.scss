@@ -1,0 +1,98 @@
+@use "../abstract/variables";
+@use "../abstract/fonts";
+@use "../abstract/mixins";
+
+html {
+  font-family: "RF Dewi Expanded";
+}
+img[alt] {
+  font-family: initial;
+}
+.header {
+  flex-wrap: wrap;
+  height: 87px;
+  width: 100%;
+  background-color: change-color(variables.$mainBgColor, $alpha: 0.3);
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+  @include mixins.logo;
+  &__request {
+    @include mixins.burger-none;
+    font-family: "RF Dewi SB";
+    font-size: 18px;
+    margin: auto 0;
+    margin-right: calc(7% + 44px);
+    color: variables.$mainTextColor;
+    text-decoration: none;
+  }
+}
+.nav {
+  display: flex;
+  font-family: "RF Dewi SB";
+  font-size: 18px;
+  margin-right: 7%;
+  &__image {
+    @include mixins.burger-icon;
+  }
+  &__list {
+    @include mixins.burger-none;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__item {
+    @include mixins.burger-none;
+    margin: auto 25px;
+    &:nth-of-type(1) {
+      margin-left: 0;
+    }
+    &:nth-last-of-type(1) {
+      margin-right: 0;
+    }
+  }
+  &__link {
+    color: grey;
+    text-decoration: none;
+  }
+}
+
+.skip-link {
+  font-family: "Montserrat";
+  text-decoration: none;
+  color: rgb(162, 162, 162);
+  width: 100%;
+  text-align: center;
+}
+
+@media (min-width: 1100px) {
+  .nav {
+    margin-right: 0;
+  }
+}
+
+@media (min-width: 1400px) {
+  .header {
+    height: 114px;
+  }
+}
+
+// PRINT
+
+@media print {
+  @include mixins.print-reset;
+  .header {
+    &__logo {
+      &[href]::after {
+        content: "";
+      }
+    }
+  }
+  .nav {
+    display: none;
+  }
+  button {
+    display: none;
+  }
+}

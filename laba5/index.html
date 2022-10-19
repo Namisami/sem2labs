@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RWD</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cardo&family=Montserrat:wght@500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<h1 hidden aria-hidden="true">Служба доставки</h1>
+<header class="header" role="banner">
+  <a class="header__logo" aria-label="Перейти на главную" href="#">
+    <img class="header__logo-picture" src="images/logo.svg" alt="Logo">
+    <img class="header__logo-text" src="images/logoText.svg" alt="Company name">
+  </a>
+  <nav class="nav" role="navigation">
+    <img class="nav__image" src="images/svg/menu.svg" alt="Menu button">
+    <ul class="nav__list">
+      <li class="nav__item">
+        <a href="#" class="nav__link">
+          Главная
+        </a>
+      </li>
+      <li class="nav__item">
+        <a href="#" class="nav__link">
+          Страховка
+        </a>
+      </li>
+      <li class="nav__item">
+        <a href="#" class="nav__link">
+          FAQ
+        </a>
+      </li>
+      <li class="nav__item">
+        <a href="#" class="nav__link">
+          Доставка
+        </a>
+      </li>
+      <li class="nav__item">
+        <a href="#" class="nav__link">
+          Контакты
+        </a>
+      </li>
+    </ul>
+  </nav>
+  <a href="#" class="header__request">
+    Оставить заявку
+  </a>
+  <a href="#content" class="skip-link">
+    Перейти к контенту
+  </a>
+</header>
+<main role="main">
+  <section class="begin-courier">
+    <div class="begin-courier__content">
+      <h2 class="begin-courier__title">
+        Стань курьером у нас и зарабатывай от 300 злотых в день
+      </h2>
+      <button class="begin-courier__button">
+        Оставить заявку
+      </button>
+      <a href="#" class="begin-courier__more more">
+        Узнать больше
+      </a>
+    </div>
+  </section>
+  <section class="approaches" id="content">
+    <div class="approaches__wrapper wrapper">
+      <h2 class="approaches__title">
+      Работая с нами Вы сохраняете все преимущества работы доставщика:
+      </h2>
+      <ul class="approaches__list">
+        <li class="approaches__item">
+          Все, что нужно это загран паспорт и права (если работав доставке на автомобиле)
+        </li>
+        <li class="approaches__item">
+          Мы предоставляем автомобильные и ручные термосумки
+        </li>
+        <li class="approaches__item">
+          Возможность работать как на автомобиле или велосипеде
+          за пределами компании.
+        </li>
+      </ul>
+      <button class="approaches__button">
+        Консультация
+      </button>
+      <a href="#" class="approaches__more more">
+        Узнать больше
+      </a>
+    </div>
+    <img class="approaches__img"
+      srcset="images/uber-wide.png 1400w,
+              images/uber.png 320w"
+      sizes="(min-width: 1400px) 1400px,
+              320px"
+      src="images/uber.png" alt="">
+  </section>
+  <section class="pluses">
+    <h2 class="pluses__title">
+      Преимущества для курьеров:
+    </h2>
+    <ul class="pluses__list wrapper">
+      <li class="pluses__item">
+        <img src="images/money.svg" alt="" class="pluses__icon">
+        <p class="pluses__text">Наши лучшие курьеры получают от 300 злотых в день</p>
+      </li>
+      <li class="pluses__item">
+        <img src="images/document.svg" alt="" class="pluses__icon">
+        <p class="pluses__text">Рекомендованный партнер Uber Eats, Bolt Food</p>
+      </li>
+      <li class="pluses__item">
+        <img src="images/check.svg" alt="" class="pluses__icon">
+        <p class="pluses__text">Техническая поддержка 24/7 в онлайн-режиме</p>
+      </li>
+      <li class="pluses__item">
+        <img src="images/calendar.svg" alt="" class="pluses__icon">
+        <p class="pluses__text">Помощь со всеми нужными документами для работы</p>
+      </li>
+      <li class="pluses__item">
+        <img src="images/support.svg" alt="" class="pluses__icon">
+        <p class="pluses__text">До 2-ух рабочих дней подключения на флот курьера</p>
+      </li>
+      <li class="pluses__item">
+        <img src="images/star.svg" alt="" class="pluses__icon">
+        <p class="pluses__text">Мы - единственный гарант выплат на рынке</p>
+      </li>
+    </ul>
+  </section>
+  <section class="faq">
+    <h2 class="faq__title">
+      Частые вопросы
+    </h2>
+    <ul class="faq__list">
+      <li class="faq__item faq__item--active">
+        <h3 class="faq__question faq__question--active">
+          Какие требования к работе курьером?
+        </h3>
+        <p class="faq__answer">
+          Все что нужно, это Ваш загранпаспорт и права (в случае доставки на автомобиле)
+        </p>
+        <button class="faq__btn" aria-label="Открыть ответ на вопрос">
+        </button>
+      </li>
+      <li class="faq__item">
+        <h3 class="faq__question">
+          Обязателен ли автомобиль для работы в доставке?
+        </h3>
+        <button class="faq__btn" aria-label="Открыть ответ на вопрос">
+        </button>
+      </li>
+      <li class="faq__item">
+        <h3 class="faq__question">
+          Где мне взять сумку для доставки?
+        </h3>
+        <button class="faq__btn" aria-label="Открыть ответ на вопрос">
+        </button>
+      </li>
+      <li class="faq__item">
+        <h3 class="faq__question">
+          Сколько я могу заработать в доставке?
+        </h3>
+        <button class="faq__btn" aria-label="Открыть ответ на вопрос">
+        </button>
+      </li>
+      <li class="faq__item">
+        <h3 class="faq__question">
+          Где и когда я могу начинать выполнять заказы?
+        </h3>
+        <button class="faq__btn" aria-label="Открыть ответ на вопрос">
+        </button>
+      </li>
+    </ul>
+  </section>
+  <section class="contacts">
+    <h2 class="contacts__title">
+      Наши контакты
+    </h2>
+    <p class="contacts__subtitle">
+      На связи 24/7, будем рады помочь, обращайтесь
+    </p>
+    <img class="contacts__logo" src="images/logo.svg" alt="Logo">
+    <ul class="contacts__list">
+      <li class="contacts__item">+48 797 933 388</li>
+      <li class="contacts__item">+48 797 133 888</li>
+      <li class="contacts__item">t.me/cleo_partner</li>
+    </ul>
+  </section>
+</main>
+<footer class="footer" role="contentinfo">
+  <ul class="footer__nav">
+    <li class="footer__item">
+      <a href="#" class="footer__link">
+        Главная
+      </a>
+    </li>
+    <li class="footer__item">
+      <a href="#" class="footer__link">
+        Страховка
+      </a>
+    </li>
+    <li class="footer__item">
+      <a href="#" class="footer__link">
+        FAQ
+      </a>
+    </li>
+    <li class="footer__item">
+      <a href="#" class="footer__link">
+        О нас
+      </a>
+    </li>
+    <li class="footer__item">
+      <a href="#" class="footer__link">
+        Контакты
+      </a>
+    </li>
+  </ul>
+  <div class="footer__logo">
+    <img src="images/logo.svg" alt="Footer logo" class="footer__logo-picture">
+    <img src="images/logoText.svg" alt="Footer logo text" class="footer__logo-text">
+  </div>
+  <ul class="footer__menu">
+    <li class="footer__item">
+      <a href="#" class="footer__privacy">
+        Политика конфиденциальности
+      </a>
+    </li>
+    <li class="footer__item">
+      <a href="#" class="footer__agreements">
+        Договора
+      </a>
+    </li>
+  </ul>
+  <div class="footer__chat">
+    <p class="footer__copyright">
+      © 2021 Cleopartner
+    </p>
+    <a href="#" class="footer__tg-link">
+      <img src="images/tg.svg" alt="Telegram icon" class="footer__tg-img">
+    </a>
+    <a href="#" class="footer__inst-link">
+      <img src="images/inst.png" alt="Instagram icon" class="footer__inst-img">
+    </a>
+  </div>
+</footer>
+</body>
+</html>

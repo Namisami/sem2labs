@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Animation</title>
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <svg class="mushroom" width="40px" height="40px" viewBox="0 0 11 9" xmlns="http://www.w3.org/2000/svg">
+    <g fill="orange" stroke-width="0" stroke="orange">
+      <rect x="3" width="5" height="1" />
+      <rect x="1" y="1" width="9" height="1" />
+      <rect x="0" y="2" width="11" height="1" />
+      <rect x="0" y="3" width="11" height="1" />
+    </g>
+    <rect x="3" y="4" width="5" height="6" fill="#fbeb9a" />
+  </svg>
+
+  <p class="bonus">?</p>
+
+  <div class="bricks"></div>
+
+  <svg class="mario" width="70" height="92" viewBox="0 0 16 46" xmlns="http://www.w3.org/2000/svg">
+    <!-- Голова -->
+    <rect x="3" y="0" width="10" height="4" fill="red" />
+    <rect x="3" y="2" width="14" height="2" fill="red" />
+    <rect x="3" y="4" width="10" height="10" fill="#fdd49f" />
+    <!-- Тело -->
+    <rect x="3" y="14" width="10" height="20" fill="red" />
+    <!-- Руки -->
+    <rect class="right-hand" x="13" y="14" width="3" height="12" fill="green" />
+    <rect class="left-hand" x="0" y="14" width="3" height="12" fill="green" />
+    <rect class="right-palm" x="13" y="26" width="3" height="2" fill="#fdd49f" />
+    <rect class="left-palm" x="0" y="26" width="3" height="2" fill="#fdd49f" />
+    <!-- Ноги -->
+    <rect class="right-leg" x="10" y="34" width="3" height="12" fill="green" />
+    <rect class="left-leg" x="3" y="34" width="3" height="12" fill="green" />
+  </svg>
+
+  <svg class="flower" width="40" height="80" viewBox="-20 10 80 40" xmlns="http://www.w3.org/2000/svg">
+    <circle class="left-flower" r="20" cx="20" cy="30" stroke="green" stroke-width="40" stroke-dasharray="73" stroke-dashoffset="10" fill="none" transform-origin="20 30" transform="rotate(45)"/>
+    <circle class="right-flower" r="20" cx="20" cy="30" stroke="green" stroke-width="40" stroke-dasharray="73" stroke-dashoffset="10" fill="none" transform-origin="20 30" transform="rotate(-45)"/>
+    <rect width="10" height="40" x="15" y="70" fill="green" />
+  </svg>
+
+  <div class="tube"></div>
+
+  <div class="ground"></div>
+
+  <input class="btn" type="button" value="Play/Stop">
+
+  <script src="animejs/lib/anime.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>

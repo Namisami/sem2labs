@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JS Repeat</title>
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <svg class="burger" width="70" height="70" xmlns="http://www.w3.org/2000/svg" tabindex="1">
+    <defs>
+        <g id="burger-line" stroke="black" stroke-width="4" stroke-linecap="round">
+            <line x1="10" x2="60" y1="0" y2="0"/>
+        </g>
+    </defs>>
+    <use class="burger__line burger__line--1" href="#burger-line" x="0" y="27.5"/>
+    <use class="burger__line burger__line--2" href="#burger-line" x="0" y="40.5"/>
+    <use class="burger__line burger__line--3" href="#burger-line" x="0" y="52.5"/>
+    </svg>
+    <nav class="menu">
+      <li><a href="#">Первая</a></li>
+      <li><a href="#">Вторая</a></li>
+      <li><a href="#">Третья</a></li>
+      <li><a href="#">Четвертая</a></li>
+      <li><a href="#">Пятая</a></li>
+      <li><a href="#">Шестая</a></li>
+      <li><a href="#">Седьмая</a></li>
+    </nav>
+  </header>
+  <main>
+    <ul class="accordeon">
+      <li class="accordeon__item">
+        <button class="accordeon__button">Текст</button>
+        <p class="accordeon__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit, quasi? Pariatur recusandae enim minus asperiores, deserunt libero id itaque neque ratione facere quod ad hic rem consectetur autem, exercitationem quisquam?</p>
+      </li>
+      <li class="accordeon__item">
+        <button class="accordeon__button">Текст</button>
+        <p class="accordeon__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit, quasi? Pariatur recusandae enim minus asperiores, deserunt libero id itaque neque ratione facere quod ad hic rem consectetur autem, exercitationem quisquam?</p>
+      </li>
+      <li class="accordeon__item">
+        <button class="accordeon__button">Текст</button>
+        <p class="accordeon__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit, quasi? Pariatur recusandae enim minus asperiores, deserunt libero id itaque neque ratione facere quod ad hic rem consectetur autem, exercitationem quisquam?</p>
+      </li>
+      <li class="accordeon__item">
+        <button class="accordeon__button">Текст</button>
+        <p class="accordeon__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit, quasi? Pariatur recusandae enim minus asperiores, deserunt libero id itaque neque ratione facere quod ad hic rem consectetur autem, exercitationem quisquam?</p>
+      </li>
+      <li class="accordeon__item">
+        <button class="accordeon__button">Текст</button>
+        <p class="accordeon__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit, quasi? Pariatur recusandae enim minus asperiores, deserunt libero id itaque neque ratione facere quod ad hic rem consectetur autem, exercitationem quisquam?</p>
+      </li>
+    </ul>
+    <div class="notice">
+      <svg class="notice__close" width="30px" height="30px" xmlns="http://www.w3.org/2000/svg">
+        <g stroke-linecap="round" stroke="black" stroke-width="2">
+          <line x1="0" x2="30" y1="0" y2="30"></line>
+          <line x1="0" x2="30" y1="30" y2="0"></line>
+        </g>
+      </svg>
+    </div>
+  </main>
+  <script src="js/script.js"></script>
+</body>
+</html>

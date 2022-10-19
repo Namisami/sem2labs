@@ -1,0 +1,70 @@
+.items {
+    display: flex;
+}
+.cross {
+    stroke: red;
+    transition: stroke .4s;
+}
+.cross:hover {
+    stroke: rgb(155, 7, 7);
+}
+.home {
+    stroke: steelblue;
+    transition: stroke .4s;
+}
+.home:hover {
+    stroke: rgb(35, 64, 88);
+}
+.search {
+    stroke: #498816;
+    transition: stroke .4s;
+}
+.search:hover {
+    stroke: #30580f;
+}
+.burger:hover {
+    cursor: pointer;
+}
+.burger__line--1 {
+    transition: transform 0.3s;
+    transform-origin: 17px 27.5px;
+}
+.burger__line--1.hover-on{
+    transform: translateX(7px) rotate(45deg);
+}
+.burger__line--2 {
+    transition: opacity 0.15s;
+}
+.burger__line--2.hover-on{
+    opacity: 0%;
+}
+.burger__line--3 {
+    transition: transform 0.3s;
+    transform-origin: 17px 52.5px;
+}
+.burger__line--3.hover-on {
+    transform: translateX(7px) rotate(-45deg);
+}
+.clock__minute,
+.clock__hour {
+    animation-name: clock;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+.clock__minute {
+    animation-duration: 6s;
+}
+.clock__hour {
+    animation-duration: 144s;
+}
+@keyframes clock {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+.light-on {
+    fill: yellow;
+}

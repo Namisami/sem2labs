@@ -1,0 +1,72 @@
+@use "../abstract/fonts";
+@use "../abstract/variables" as vars;
+@use "../abstract/mixins";
+
+html {
+  font-family: vars.$mainFont;
+}
+
+.body {
+  @include mixins.mpzero;
+}
+.header {
+  display: flex;
+  justify-content: center;
+  background-color: vars.$subBgColor;
+  &__logo {
+    margin: 7px;
+    display: flex;
+  }
+  &__logo-img {
+    margin: auto;
+  }
+}
+.nav {
+  padding: 20px 10px;
+  &__list {
+    @include mixins.mpzero;
+    margin: auto 0;
+    list-style: none;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  &__item {
+    margin: 3px 5px;
+  }
+  &__anchor {
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
+    &:active {
+      color: rgba(0, 0, 0, 0.677);
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .nav {
+    &__list {
+      flex-direction: row;
+    }
+  }
+}
+@media (min-width: 1600px) {
+  html {
+    font-size: 1.15em;
+  }
+  input, select {
+    font-size: 1em;
+  }
+}
+@media (min-width: 1900px) {
+  html {
+    font-size: 1.5em;
+  }
+  input, select {
+    font-size: 1em;
+  }
+}
